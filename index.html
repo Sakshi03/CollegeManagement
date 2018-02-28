@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+<script src="./app.js"></script>
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body ng-app="myApp">
+    
+    <div class="maindiv">
+       
+    <nav style="display:inline;">
+        <a href="#" ng-click="data='colleges'; active=true">All</a>
+        <a href="#" ng-click="data='colleges'; active=true">Colleges</a>
+        <a href="#" ng-click="data='tutorials'; active=true">Tutorials</a>
+        <a href="#" ng-click="data='faculty'; active=true">Faculty</a>
+         <a href="#" ng-click="data=''; active=true">Student</a>
+    </nav>
+     <section ui-view>
+   
+</section>
+    </div>
+    <p ng-show="active">{{data}}</p>
+
+</body>
+</html>

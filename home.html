@@ -1,0 +1,68 @@
+<div ng-controller="myCtrl">
+    <p class="headerclass">Colleges</p>
+    <div class="w3-card-4 w3-light-grey" style="width: 39%;height: 251px;margin-left: 75px;margin-top: 56px;">
+        <div class="w3-container w3-center" style="border:1px gray;">
+          <img src="./college.jpg" style="width: 100%;padding-top:13px;">
+      <div class="w3-section" alt="College" style="width:80%">
+          <input type="text" placeholder="Location"  ng-model="statename" style="margin-left: -122px; width: 150px; position: absolute; margin-top: -12px;"><br/><br/>
+      <button id="modalBtn" class="w3-button w3-dark-grey" ng-click="getList(statename)" style="padding-top: 3px;height: 30px; margin-top: -107px;margin-left:184px;">List of Colleges</button>
+      <div id="simpleModal" class="modal">
+<div class="modal-content">
+<span class="closeBtn">&times;</span>
+<p ng-repeat="item in items">
+  {{item.schoolName}} {{item.address.street}},{{item.address.city}}--{{item.schoolLevel}}
+</p>
+</div> 
+</div>
+    </div>
+        </div>
+
+    <p class="tutorialdiv">Online Courses</p>
+    <div class="w3-card-4 w3-light-grey" style="width: 100%;height: 249px;margin-left: 440px;margin-top: -310px;">
+         <div class="w3-container w3-center" style="border:1px gray;">
+      <img src="./training.jpg" alt="Tutorials" style="width: 88%;padding-top: 17px;">
+     <div class="w3-section">
+  <span id="date">{{CurrentDate|date:'ddMMM , HH:mm'}}</span>
+<button id="secondBtn" class="w3-button w3-dark-grey"  style="margin-left:53px;height: 30px;padding-top: 4px">Report</button>
+<div id="simpleModalOne" class="modal">
+<div class="modal-content">
+  <p>REPORT A PROBLEM</p>
+  <img src="./report.jpg" style="height: 151px;margin-left: -273px;margin-top: 47px;">
+  <h4 style="font-size: 15px;margin-top: -151px;margin-left: 126px;">Details:</h4>
+  <p style="font-size: 11px; margin-left: 393px; text-align: -webkit-left;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..<b>view more</b></p>
+  <h4 style="margin-left: 334px;font-size: 15px;margin-top: 52px;">Please select the reason to report</h4>
+  <select ng-model="selectedName" ng-options="x for x in names" style="margin-left: 342px;width: 200px;"></select>
+  <button  id="cancelBtn" class="w3-button w3-dark-grey" style="position: absolute; margin-top: 74px; border-radius: 5px 5px 5px 5px; margin-left: -198px;">Cancel</button>
+  <button class="w3-button w3-dark-grey" style="position: absolute; margin-top: 74px; border-radius: 5px 5px 5px 5px;margin-left: -72px;">Submit</button>
+<span class="closeBtn" style="position: absolute;right: 12px;top: 10px;">&times;</span>
+</div>
+</div>
+      </div>
+    </div>
+
+
+    <p class="studentdiv">Student</p>
+    <div class="w3-card-4 w3-light-grey" style="width: 100%;height: 223px;margin-left: -440px;margin-top: 53px;">
+         <div class="w3-container w3-center" style="border:1px gray;">
+      <img src="./student.jpg" alt="Student" style="width: 86%;padding-top: 7px;">
+      <div class="w3-section">
+        <span id="date">{{CurrentDate|date:'ddMMM , HH:mm'}}</span>
+       <button class="w3-button w3-dark-grey"  style="margin-left:53px;height: 30px;padding-top: 4px;margin-top: -9px;">Report</button>
+      </div>
+    </div>
+  </div>
+
+   
+    <p class="facultydiv">Faculty</p>
+    <div class="w3-card-4 w3-light-grey" style="width: 100%;height: 223px;margin-left: 5px;margin-top: -221px;">
+         <div class="w3-container w3-center" style="border:1px gray;">
+      <img src="./faculty.jpg" alt="Student" style="width: 86%;padding-top: 7px;">
+      <div class="w3-section">
+        <span id="date">{{CurrentDate|date:'ddMMM , HH:mm'}}</span>
+       <button class="w3-button w3-dark-grey"  style="margin-left:53px;height: 30px;padding-top: 4px;margin-top: -9px;">Report</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>

@@ -1,0 +1,85 @@
+body{
+    font:13px sans-serif;
+    color:black;
+    text-align: center;
+}
+nav{
+   background-color: blue;
+    border-radius: 5px;
+    margin: auto;
+    width: 659px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+nav a{
+   display: inline-block;
+    padding: 10px 44px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.maindiv{
+    border: 1px solid darkgray;
+    height: 646px;
+    width: 991px;
+    margin: auto;
+}
+.headerclass{
+    margin-left: 77px;
+    position: absolute;
+    margin-top: -33px;
+    color:navy;
+}
+.tutorialdiv{
+  
+    margin-left: 438px;
+    position: absolute;
+    margin-top: -338px;
+    color: navy;
+}
+.facultydiv{
+       margin-left: 6px;
+    position: absolute;
+    margin-top: -257px;
+    color: navy;
+}
+.studentdiv{
+    margin-left: -436px;
+    position: absolute;
+    margin-top: 18px;
+    color: navy;
+}
+#date{
+    color:blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal{
+    display:none;
+    position: fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0, 0, 0,0.5);
+    overflow: auto;
+}
+.modal-content{
+        background-color: white;
+    margin: 10% auto;
+    padding: 9px;
+   width: 55%;
+    height: 396px;
+}
+.closeBtn{
+    float:right;
+    font-size:25px;
+}
+.closeBtn:hover{
+    cursor:pointer;
+}
+
+ 
+
+ 
